@@ -2,18 +2,17 @@ import React, { useState } from 'react';
 import Header from './header.js';
 import Body from './body.js';
 import Footer from './footer.js';
-import { AvatarImageProvider } from './contexts/avatarImageContext';
 import { UsernameProvider } from './contexts/usernameContext';
 import './index.css';
 
-//const App = () => {
-class App extends React.Component {
+const App = () => {
+//class App extends React.Component {
 
-    state = {
+    /*state = {
         username:'',
-    }
+    }*/
 
-    //let [username, setUsername] = useState('');
+    const [username, setUsername] = useState('');
 
     //Primer intento, no válido
 
@@ -23,21 +22,27 @@ class App extends React.Component {
 
     //Con función flecha, usando setState
 
-    handleUsernameChange = (username) => {
+    /*handleUsernameChange = (username) => {
         this.setState({username:username});
-    }
+    }*/
 
     //Con función flecha, usando hook useState
 
-    /*const handleUsernameChange = (username) => {
-        setUsername({username:username});
-    }*/
+    const handleUsernameChange = (username) => {
+        setUsername(username);
+    }
 
-    render(){
+    //render(){
    
-        const img = 'disco.jpg'
+        //const img = 'disco.jpg'
 
-        const userProps = {username: this.state.username, onUsernameChange: this.handleUsernameChange }
+        //const userProps = {username: this.state.username, onUsernameChange: this.handleUsernameChange }
+
+        const userData = {
+            username: username,
+            onUsernameChange: handleUsernameChange,
+            img: 'disco.jpg',
+        }
 
     /*return (
         <div className="App">
@@ -56,16 +61,14 @@ class App extends React.Component {
 
         return (
             <div className="App">
-                <UsernameProvider value={userProps}>
-                    <AvatarImageProvider value={img}>
-                        <Header/>
-                        <Body/>                   
-                        <Footer/>
-                    </AvatarImageProvider>
+                <UsernameProvider value={userData}>
+                    <Header/>
+                    <Body/>                   
+                    <Footer/>
                 </UsernameProvider>             
             </div>
             );
-    }    
+    //}    
     
 }
 

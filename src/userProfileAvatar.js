@@ -1,14 +1,13 @@
 import React, { useState, useContext } from 'react';
-import ReactDOM from 'react-dom';
-import AvatarImageContext from './contexts/avatarImageContext'; 
+import UsernameContext from './contexts/usernameContext';
 import './index.css';
 
 function UserProfileAvatar(props){
 
-    const img = useContext(AvatarImageContext)
+    const userData = useContext(UsernameContext)
 
     return(
-        <img src={img} alt="Profile Picture" height="220" width="220"/>
+        <img src={userData.img} alt="Profile Picture" height="220" width="220"/>
     );
 }
 

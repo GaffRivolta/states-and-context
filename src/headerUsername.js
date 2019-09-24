@@ -5,9 +5,9 @@ import './index.css';
 
 function HeaderUsername(props){
 
-    const userProps = useContext(UsernameContext)
+    const userData = useContext(UsernameContext)
     return(
-        <label>{userProps.username}</label>
+        <label>{userData.username}</label>
     )
 }
 

@@ -19,16 +19,17 @@ function UserProfileUserName(props){
             onChange={handleChange}></input>
     );*/
 
-    const userProps = useContext(UsernameContext)
+    const userData = useContext(UsernameContext)
 
     const handleChange = (event) => {
-        userProps.onUsernameChange(event.target.value);
+        userData.onUsernameChange(event.target.value);
     }
 
     return(
         <input 
-            type="text" value={userProps.username}
-            onChange={handleChange}></input>
+            type="text" value={userData.username}
+            onChange={handleChange}>
+        </input>
     );
 }
 
