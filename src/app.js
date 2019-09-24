@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from './header.js';
 import Body from './body.js';
 import Footer from './footer.js';
-import { UsernameProvider } from './contexts/usernameContext';
+import { UserDataProvider } from './contexts/userDataContext';
 import './index.css';
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
         username:'',
     }*/
 
-    const [username, setUsername] = useState('');
+    //const [username, setUsername] = useState('');
 
     //Primer intento, no válido
 
@@ -28,9 +28,9 @@ const App = () => {
 
     //Con función flecha, usando hook useState
 
-    const handleUsernameChange = (username) => {
+    /*const handleUsernameChange = (username) => {
         setUsername(username);
-    }
+    }*/
 
     //render(){
    
@@ -38,11 +38,11 @@ const App = () => {
 
         //const userProps = {username: this.state.username, onUsernameChange: this.handleUsernameChange }
 
-        const userData = {
+        /*const userData = {
             username: username,
             onUsernameChange: handleUsernameChange,
             img: 'disco.jpg',
-        }
+        }*/
 
     /*return (
         <div className="App">
@@ -59,15 +59,25 @@ const App = () => {
     );
     */
 
-        return (
-            <div className="App">
+        /*return (
+            <div className="container">
                 <UsernameProvider value={userData}>
                     <Header/>
                     <Body/>                   
                     <Footer/>
                 </UsernameProvider>             
             </div>
-            );
+        );*/
+
+        return (
+            <div className="medium-container">
+                <UserDataProvider>
+                    <Header/>
+                    <Body/>                   
+                    <Footer/>
+                </UserDataProvider>             
+            </div>
+        );
     //}    
     
 }

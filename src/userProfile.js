@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import UserProfileAvatar from './userProfileAvatar';
 import UserProfileUserName from './userProfileUsername';
 import './index.css';

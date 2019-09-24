@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import HeaderAvatar from './headerAvatar.js';
 import HeaderUsername from './headerUsername.js';
 import './index.css';
@@ -10,7 +9,6 @@ function Header(props){
             <HeaderAvatar/>
             <HeaderUsername/>
         </div>
-
     );
 }
 

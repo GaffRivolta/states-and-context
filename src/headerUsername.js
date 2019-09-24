@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import ReactDOM from 'react-dom';
-import UsernameContext from './contexts/usernameContext'; 
+import { UserDataContext } from './contexts/userDataContext';
 import './index.css';
 
 function HeaderUsername(props){
 
-    const userData = useContext(UsernameContext)
+    const userData = useContext(UserDataContext)
+    
     return(
         <label>{userData.username}</label>
     )

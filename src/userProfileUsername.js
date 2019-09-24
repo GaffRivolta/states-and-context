@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
-import ReactDOM from 'react-dom';
-import UsernameContext from './contexts/usernameContext'; 
+import { UserDataContext } from './contexts/userDataContext';
 import './index.css';
 
 function UserProfileUserName(props){
@@ -19,7 +18,9 @@ function UserProfileUserName(props){
             onChange={handleChange}></input>
     );*/
 
-    const userData = useContext(UsernameContext)
+    //const userData = useContext(UsernameContext)
+
+    const userData = useContext(UserDataContext)
 
     const handleChange = (event) => {
         userData.onUsernameChange(event.target.value);

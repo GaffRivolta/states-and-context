@@ -1,10 +1,10 @@
-import React, { useState, useContext } from 'react';
-import UsernameContext from './contexts/usernameContext';
+import React, { useContext } from 'react';
+import { UserDataContext } from './contexts/userDataContext';
 import './index.css';
 
 function HeaderAvatar(props){
 
-    const userData = useContext(UsernameContext)
+    const userData = useContext(UserDataContext)
 
     /*return(
         <img src={props.img} alt="Disco Lunar" height="42" width="42"/>
