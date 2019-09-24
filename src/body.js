@@ -6,7 +6,7 @@ import './index.css';
 function Body(props){
     return(
         <div className="Body">
-            <UserProfile img={props.img} username={props.username} onUsernameChange={props.onUsernameChange}/>
+            <UserProfile/>
         </div>
     );
 }

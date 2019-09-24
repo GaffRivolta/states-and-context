@@ -7,8 +7,8 @@ import './index.css';
 function UserProfile(props){
     return(
         <div className="UserProfile">
-            <UserProfileAvatar img={props.img}/>
-            <UserProfileUserName username={props.username} onUsernameChange={props.onUsernameChange}/>
+            <UserProfileAvatar/>
+            <UserProfileUserName/>
         </div>
     );
 }

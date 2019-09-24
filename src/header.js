@@ -7,8 +7,8 @@ import './index.css';
 function Header(props){
     return(
         <div className="header">
-            <HeaderAvatar img={props.img}/>
-            <HeaderUsername username={props.username}/>
+            <HeaderAvatar/>
+            <HeaderUsername/>
         </div>
 
     );
