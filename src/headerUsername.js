@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { UserDataContext } from './contexts/userDataContext';
 //import './styles/index.css';
+import './styles/flexbox-style.css';
 
 function HeaderUsername(props){
 

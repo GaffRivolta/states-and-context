@@ -29,7 +29,7 @@ function UserProfileUserName(props){
     return(
         <input 
             type="text" value={userData.username}
-            onChange={handleChange}>
+            onChange={handleChange} maxLength="20">
         </input>
     );
 }

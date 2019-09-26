@@ -23,11 +23,12 @@
 }
 
 @media all and (max-width: 500px) {
-    /*.header {
+    .header {
       flex-direction: column;
-    }*/
+      height: 120px;
+    }
 
-    .header-avatar-picture {
+    .header * {
         align-self: flex-start;
     }
 }
