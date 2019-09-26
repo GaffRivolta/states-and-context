@@ -1,10 +1,11 @@
 import React from 'react';
 import UserProfile from './userProfile.js';
-import './index.css';
+//import './styles/index.css';
+import './styles/flexbox-style.css';
 
 function Body(props){
     return(
-        <div className="Body">
+        <div className="body">
             <UserProfile/>
         </div>
     );

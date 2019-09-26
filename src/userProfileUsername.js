@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { UserDataContext } from './contexts/userDataContext';
-import './index.css';
+//import './styles/index.css';
 
 function UserProfileUserName(props){
 

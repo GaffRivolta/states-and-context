@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { UserDataContext } from './contexts/userDataContext';
-import './index.css';
+//import './styles/index.css';
+import './styles/flexbox-style.css';
 
 function HeaderAvatar(props){
 
@@ -11,7 +12,7 @@ function HeaderAvatar(props){
     );*/
     
     return(
-        <img src={userData.img} alt="Disco Lunar" height="42" width="42"/>
+        <img className="header-avatar-picture" src={userData.img} alt="Disco Lunar" height="42" width="42"/>
     );
 }
 

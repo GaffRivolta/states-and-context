@@ -1,11 +1,12 @@
 import React from 'react';
 import UserProfileAvatar from './userProfileAvatar';
 import UserProfileUserName from './userProfileUsername';
-import './index.css';
+//import './styles/index.css';
+import './styles/flexbox-style.css';
 
 function UserProfile(props){
     return(
-        <div className="UserProfile">
+        <div className="user-profile">
             <UserProfileAvatar/>
             <UserProfileUserName/>
         </div>

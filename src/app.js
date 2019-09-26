@@ -3,7 +3,8 @@ import Header from './header.js';
 import Body from './body.js';
 import Footer from './footer.js';
 import { UserDataProvider } from './contexts/userDataContext';
-import './index.css';
+//import './styles/index.css';
+import './styles/flexbox-style.css';
 
 const App = () => {
 //class App extends React.Component {
