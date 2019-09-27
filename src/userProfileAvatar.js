@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { UserDataContext } from './contexts/userDataContext';
 //import './styles/index.css';
+import './styles/flexbox-style.css';
+import { StyledImg } from './styled-components/img';
 
 function UserProfileAvatar(props){
 
@@ -8,7 +10,8 @@ function UserProfileAvatar(props){
     const userData = useContext(UserDataContext)
 
     return(
-        <img src={userData.img} alt="Profile Picture" height="220" width="220"/>
+        /*<img className="user-profile-avatar" src={userData.img} alt="Profile Picture"/>*/
+        <StyledImg className="user-profile-avatar" src={userData.img} alt="Profile Picture"/>
     );
 }
 
